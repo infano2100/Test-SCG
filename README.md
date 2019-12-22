@@ -10,10 +10,6 @@ Install Libs:
 
 ```sh 
 - npm i
-- add google aip key
-  - cd ios/Test_SCG
-  - open file AppDelegate.m
-  - 
 ```
 
 Add Googole Api Key:
@@ -29,11 +25,19 @@ Pod Install:
 
 ```sh 
 - cd ios/ && pod install
- ![alt test](screenshots/pod-install-erro.png)
-  when CocoaPods could not find compatible versions for pod "GoogleMaps"
-  
-
 ```
+
+Fix Pod Install Error When CocoaPods could not find compatible versions for pod "GoogleMaps":
+ 
+ ![alt test](screenshots/pod-install-erro.png)
+```sh 
+ - cd node_modules/react-native-google-places/
+ - open file react-native-google-places.podspec
+ - edit line s.dependency 'GooglePlaces', '~> 3.1.0' => s.dependency 'GooglePlaces', '~> 3.2.0'
+ - edit line s.dependency 'GoogleMaps', '~> 3.1.0' => s.dependency 'GoogleMaps', '~> 3.2.0'
+```
+ ![alt test](screenshots/podspec-3.1.png)
+ ![alt test](screenshots/podspec-3.2.png)
 
 Run with:
 
