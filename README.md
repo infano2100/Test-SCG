@@ -36,6 +36,7 @@ Fix Pod Install Error When CocoaPods could not find compatible versions for pod 
  - open file react-native-google-places.podspec
  - edit line s.dependency 'GooglePlaces', '~> 3.1.0' => s.dependency 'GooglePlaces', '~> 3.2.0'
  - edit line s.dependency 'GoogleMaps', '~> 3.1.0' => s.dependency 'GoogleMaps', '~> 3.2.0'
+ - pod install
 ```
 
  ![alt test](screenshots/podspec-3.1.png)
