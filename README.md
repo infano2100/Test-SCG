@@ -19,12 +19,12 @@ Add Googole Api Key:
 IOS
 - cd ios/Test_SCG
 - open file AppDelegate.m
-- edit line [GMSPlacesClient provideAPIKey:@"IOS_API_KEY"]; => "IOS_API_KEY" = google api key
-- edit line [GMSServices provideAPIKey:@"IOS_API_KEY"]; => "IOS_API_KEY" = google api key
+- edit line [GMSPlacesClient provideAPIKey:@"GOOGLE_PLACES_API_KEY"]; => "google_places_api_key" = google api key
+- edit line [GMSServices provideAPIKey:@"MAPS_SDK_IOS_API_KEY"]; => "IOS_API_KEY" = google api key
 
 ANDROID
-- In your File AndroidManifest.xml edit <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOU_API_KEY"/>
-- /android/gradle.properties RNGP_ANDROID_API_KEY=YOU_API_KEY
+- In your File AndroidManifest.xml edit <meta-data android:name="com.google.android.geo.API_KEY" android:value="MAPS_SDK_ANDROID_API_KEY"/>
+- /android/gradle.properties RNGP_ANDROID_API_KEY=GOOGLE_PLACES_API_KEY
 
 ```
 
