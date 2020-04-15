@@ -15,10 +15,17 @@ Install Libs:
 Add Googole Api Key:
 
 ```sh 
+
+IOS
 - cd ios/Test_SCG
 - open file AppDelegate.m
 - edit line [GMSPlacesClient provideAPIKey:@"IOS_API_KEY"]; => "IOS_API_KEY" = google api key
 - edit line [GMSServices provideAPIKey:@"IOS_API_KEY"]; => "IOS_API_KEY" = google api key
+
+ANDROID
+- In your File AndroidManifest.xml edit <meta-data android:name="com.google.android.geo.API_KEY" android:value="YOU_API_KEY"/>
+- /android/gradle.properties RNGP_ANDROID_API_KEY=YOU_API_KEY
+
 ```
 
 Pod Install:
@@ -46,4 +53,11 @@ Run with:
 
 ```sh 
 - run ios => react-native run-ios
+- run android => react-native run-android
+```
+
+Fix Android error: package com.android.annotations does not exist
+
+```sh 
+- run npx jetify
 ```
